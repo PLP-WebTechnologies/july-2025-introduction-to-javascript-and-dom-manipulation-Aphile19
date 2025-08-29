@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Mastery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Fundamentals Assignment</h1>
+        <p>Explore variables, functions, loops, and DOM manipulation!</p>
+    </header>
+
+    <main>
+        <!-- Part 1: Variables and Conditionals Demo -->
+        <section id="part1">
+            <h2>Part 1: Variables & Conditionals</h2>
+            <div class="input-group">
+                <label for="userAge">Enter your age:</label>
+                <input type="number" id="userAge" placeholder="Enter your age">
+                <button onclick="checkAge()">Check Age</button>
+            </div>
+            <p id="ageResult" class="result"></p>
+        </section>
+
+        <!-- Part 2: Functions Demo -->
+        <section id="part2">
+            <h2>Part 2: Functions</h2>
+            <div class="input-group">
+                <label for="num1">Number 1:</label>
+                <input type="number" id="num1" placeholder="First number">
+                <label for="num2">Number 2:</label>
+                <input type="number" id="num2" placeholder="Second number">
+                <button onclick="calculate()">Calculate</button>
+            </div>
+            <div class="results">
+                <p>Sum: <span id="sumResult">-</span></p>
+                <p>Difference: <span id="diffResult">-</span></p>
+                <p>Product: <span id="productResult">-</span></p>
+            </div>
+        </section>
+
+        <!-- Part 3: Loops Demo -->
+        <section id="part3">
+            <h2>Part 3: Loops</h2>
+            <div class="input-group">
+                <label for="loopNumber">Enter a number (1-10):</label>
+                <input type="number" id="loopNumber" min="1" max="10" value="5">
+                <button onclick="runLoops()">Run Loops</button>
+            </div>
+            <div class="results">
+                <h3>For Loop Results:</h3>
+                <p id="forLoopResult"></p>
+                <h3>While Loop Results:</h3>
+                <p id="whileLoopResult"></p>
+            </div>
+        </section>
+
+        <!-- Part 4: DOM Manipulation Demo -->
+        <section id="part4">
+            <h2>Part 4: DOM Manipulation</h2>
+            <div class="dom-controls">
+                <button onclick="changeText()">Change Text</button>
+                <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+                <button onclick="addListItem()">Add List Item</button>
+                <button onclick="resetAll()">Reset All</button>
+            </div>
+            <div class="dom-results">
+                <p id="changeableText">This text will change when you click the button!</p>
+                <ul id="itemList">
+                    <li>Initial item 1</li>
+                    <li>Initial item 2</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript Fundamentals Assignment - Mastering JS Concepts</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
